@@ -15,7 +15,7 @@
   <body>
     <div class="container">
       <header>
-        <form action="#">
+        <form action="#" id="search-form">
           <input
             type="search"
             name="city"
@@ -23,6 +23,7 @@
             placeholder="Enter A City..."
             required
             class="form-search"
+            id="city-input"
           />
           <input type="submit" value="Search" class="form-submit" />
         </form>
@@ -31,7 +32,7 @@
       <main>
         <div class="weather-content">
           <div>
-            <h1 class="weather-current-city">Pretoria</h1>
+            <h1 class="weather-current-city" id="current-city">Pretoria</h1>
             <p class="weather-time">
               Friday <strong>10:45</strong>, Sunny <br />
               Humidity: <strong>78%</strong>, Wind: <strong>5.14km/h</strong>,
@@ -51,17 +52,32 @@
       <footer>
         <p class="footer-link">
           This project was coded by
-          <span> <a href="#" target="_blank"> Clementine</a>, </span> is
-          open-sourced on
           <span>
-            <a href="#" target="_blank"> Github</a>
+            <a href="https://github.com/clementineKgwadi" target="_blank">
+              Clementine</a
+            >,
+          </span>
+          is open-sourced on
+          <span>
+            <a
+              href="https://github.com/clementineKgwadi/Weather-Final-Project"
+              target="_blank"
+            >
+              Github</a
+            >
           </span>
           and hosted on
           <span>
-            <a href="#" target="_blank"> Netlify. </a>
+            <a
+              href="https://weather-final-project.netlify.app/"
+              target="_blank"
+            >
+              Netlify.
+            </a>
           </span>
         </p>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
