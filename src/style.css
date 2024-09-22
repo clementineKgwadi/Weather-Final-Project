@@ -50,11 +50,11 @@ strong {
 .weather-current-city {
   font-size: 45px;
   margin: 0;
-  line-height: 28px;
+  line-height: 30px;
 }
 .weather-time {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 15px;
+  line-height: 24px;
   color: #00000099;
 }
 .current-weather {
@@ -62,22 +62,23 @@ strong {
   margin-top: -16px;
 }
 .weather-icon {
-  font-size: 50px;
-  margin-top: 18px;
+  width: 88px;
+  margin-top: 6px;
 }
 .weather-current-temperature {
   font-size: 88px;
   font-weight: bold;
 }
 .weather-unit {
-  font-size: 28px;
-  margin-top: 6px;
+  font-size: 22px;
+  margin-top: 17px;
 }
 .f-weather {
   color: #00000099;
   text-align: right;
   margin-top: -54px;
-  margin-right: 20px;
+  font-size: 15px;
+  margin-right: 6px;
 }
 
 footer {

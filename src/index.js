@@ -7,6 +7,7 @@ function updateWeather(response) {
   let windSpeedElement = document.querySelector("#wind");
   let weekDaysElement = document.querySelector("#week-days");
   let timeElement = document.querySelector("#time");
+  let imageIconElement = document.querySelector("#image-icon");
 
   let date = new Date(response.data.time * 1000);
 
@@ -20,6 +21,8 @@ function updateWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   weekDaysElement.innerHTML = formatDay(date);
   timeElement.innerHTML = getTime(date);
+  imageIconElement.innerHTML = `<img
+                  src="${response.data.condition.icon_url}" class = "image-icon" />`;
 }
 
 function getTime(date) {
